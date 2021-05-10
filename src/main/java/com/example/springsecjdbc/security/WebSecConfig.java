@@ -24,12 +24,12 @@ public class WebSecConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication()
                 .dataSource(dataSource)
-                .withDefaultSchema()
+         /*       .withDefaultSchema()
                 .withUser(User.withUsername("rakesh")
                         .password("rakesh")
                         .roles("USER"))
                 .withUser(User.withUsername("admin")
-                .password("admin").roles("ADMIN"))
+                .password("admin").roles("ADMIN"))*/
                 ;
     }
 
